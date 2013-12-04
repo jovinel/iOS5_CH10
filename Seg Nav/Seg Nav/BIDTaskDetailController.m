@@ -9,6 +9,9 @@
 #import "BIDTaskDetailController.h"
 
 @implementation BIDTaskDetailController
+@synthesize textView;
+@synthesize selection;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,14 +41,33 @@
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
+*/
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    textView.text = [selection objectForKey:@"object"];
+    [textView becomeFirstResponder];
 }
-*/
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if ([delegate respondsToSelector:@selector(setEditedSelection:)]) {
+        // finish editing
+        [textView endEditing:YES];
+        // prepare selection info
+        NSIndexPath *indexPath = [selection objectForKey:@"indexPath"];
+        id object = textView.text;
+        NSDictionary *editedSelection = [NSDictionary dictionaryWithObjectsAndKeys:indexPath, @"indexPath", object, @"object", nil];
+        [delegate setValue:editedSelection forKey:@"editedSelection"];
+    }
+}
 
 - (void)viewDidUnload
 {
+    [self setTextView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
