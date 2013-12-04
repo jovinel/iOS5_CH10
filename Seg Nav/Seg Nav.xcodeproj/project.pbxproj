@@ -14,6 +14,8 @@
 		00AE423B184ECAD800D83FBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE423A184ECAD800D83FBB /* main.m */; };
 		00AE423F184ECAD800D83FBB /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE423E184ECAD800D83FBB /* BIDAppDelegate.m */; };
 		00AE4246184ECB2E00D83FBB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AE4245184ECB2E00D83FBB /* MainStoryboard.storyboard */; };
+		00AE4249184ED23600D83FBB /* BIDTaskListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE4248184ED23600D83FBB /* BIDTaskListController.m */; };
+		00AE424C184ED27D00D83FBB /* BIDTaskDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE424B184ED27D00D83FBB /* BIDTaskDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		00AE423D184ECAD800D83FBB /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		00AE423E184ECAD800D83FBB /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
 		00AE4245184ECB2E00D83FBB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		00AE4247184ED23600D83FBB /* BIDTaskListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTaskListController.h; sourceTree = "<group>"; };
+		00AE4248184ED23600D83FBB /* BIDTaskListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTaskListController.m; sourceTree = "<group>"; };
+		00AE424A184ED27D00D83FBB /* BIDTaskDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTaskDetailController.h; sourceTree = "<group>"; };
+		00AE424B184ED27D00D83FBB /* BIDTaskDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTaskDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +80,14 @@
 		00AE4234184ECAD800D83FBB /* Seg Nav */ = {
 			isa = PBXGroup;
 			children = (
+				00AE4247184ED23600D83FBB /* BIDTaskListController.h */,
+				00AE4248184ED23600D83FBB /* BIDTaskListController.m */,
 				00AE423D184ECAD800D83FBB /* BIDAppDelegate.h */,
 				00AE423E184ECAD800D83FBB /* BIDAppDelegate.m */,
 				00AE4235184ECAD800D83FBB /* Supporting Files */,
 				00AE4245184ECB2E00D83FBB /* MainStoryboard.storyboard */,
+				00AE424A184ED27D00D83FBB /* BIDTaskDetailController.h */,
+				00AE424B184ED27D00D83FBB /* BIDTaskDetailController.m */,
 			);
 			path = "Seg Nav";
 			sourceTree = "<group>";
@@ -157,6 +167,8 @@
 			files = (
 				00AE423B184ECAD800D83FBB /* main.m in Sources */,
 				00AE423F184ECAD800D83FBB /* BIDAppDelegate.m in Sources */,
+				00AE4249184ED23600D83FBB /* BIDTaskListController.m in Sources */,
+				00AE424C184ED27D00D83FBB /* BIDTaskDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
