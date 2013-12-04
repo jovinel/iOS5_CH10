@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AE421D184EC51C00D83FBB /* BIDStaticCellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE421C184EC51C00D83FBB /* BIDStaticCellsController.m */; };
 		00C25245184DD5B000CB2CAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C25244184DD5B000CB2CAE /* UIKit.framework */; };
 		00C25247184DD5B000CB2CAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C25246184DD5B000CB2CAE /* Foundation.framework */; };
 		00C25249184DD5B000CB2CAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C25248184DD5B000CB2CAE /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00AE421B184EC51C00D83FBB /* BIDStaticCellsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDStaticCellsController.h; sourceTree = "<group>"; };
+		00AE421C184EC51C00D83FBB /* BIDStaticCellsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDStaticCellsController.m; sourceTree = "<group>"; };
 		00C25240184DD5B000CB2CAE /* Simple Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C25244184DD5B000CB2CAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00C25246184DD5B000CB2CAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 				00C2524B184DD5B000CB2CAE /* Supporting Files */,
 				00C25261184DD8FD00CB2CAE /* BIDTaskListController.h */,
 				00C25262184DD8FD00CB2CAE /* BIDTaskListController.m */,
+				00AE421B184EC51C00D83FBB /* BIDStaticCellsController.h */,
+				00AE421C184EC51C00D83FBB /* BIDStaticCellsController.m */,
 			);
 			path = "Simple Storyboard";
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				00C25255184DD5B000CB2CAE /* BIDAppDelegate.m in Sources */,
 				00C2525B184DD5B000CB2CAE /* BIDViewController.m in Sources */,
 				00C25263184DD8FD00CB2CAE /* BIDTaskListController.m in Sources */,
+				00AE421D184EC51C00D83FBB /* BIDStaticCellsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +286,7 @@
 				00C25260184DD5B000CB2CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
